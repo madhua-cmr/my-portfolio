@@ -1,0 +1,50 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for the page */
+    font-family: 'Arial', sans-serif; /* Clean font for text */
+    color: #333; /* Dark text color */
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff; /* Primary color */
+    margin-bottom: 20px;
+    text-align: center; /* Center title */
+  }
+  
+  .about-card {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff; /* White background for the content */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 50px;
+    max-width: 1000px; /* Limit width for readability */
+    margin: 20px auto; /* Center the content */
+  }
+  
+  .profile-photo {
+    border-radius: 100px ; 
+    /* Circular image */
+    width: 200px; /* Fixed width for photo */
+    height: 200px; /* Fixed height for photo */
+    margin-right: 40px; /* Space between image and text */
+    object-fit: cover; /* Crop the image */
+  }
+  
+  .about-description {
+    flex: 1; /* Allow text to take available space */
+  }
+  
+  .about-description p {
+    font-size: 1rem; /* Slightly larger font for paragraphs */
+    line-height: 1.6; /* Better line height for readability */
+    margin-bottom: 10px; /* Space between paragraphs */
+    text-align: justify;
+  }
+  
+  

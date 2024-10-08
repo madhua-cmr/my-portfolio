@@ -1,0 +1,55 @@
+/* Container to hold both the image and content */
+.home-container {
+  display: flex; /* Flexbox layout for side-by-side alignment */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 50px; /* Add some padding */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Profile picture container */
+.profile {
+  margin-right: 50px;
+   /* Space between image and text content */
+}
+
+/* Style for the profile picture */
+.profile-pic {
+  width: 500px; /* Set width of the image */
+  height: 500px; /* Set height of the image */
+  border-radius: 10px; /* Make the image circular */
+  object-fit: cover; /* Ensure the image doesn't get distorted */
+   /* Add a soft shadow for depth */
+}
+
+/* Content section styling */
+.content {
+  max-width: 600px;
+  text-align: justify; /* Limit the width of the content */
+}
+
+h1 {
+  font-size: 36px; /* Large heading size */
+  color: #333; /* Dark text color */
+}
+
+p {
+  font-size: 18px; /* Paragraph font size */
+  line-height: 1.6; /* Improve readability with line height */
+  color: #555; /* Slightly lighter text for paragraphs */
+}
+
+.resume-button {
+  display: inline-block; /* Make the link look like a button */
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Button padding */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.resume-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
