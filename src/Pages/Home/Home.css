@@ -4,7 +4,7 @@
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   padding: 50px; /* Add some padding */
-  background-color: #f9f9f9; /* Light background color */
+ /* Light background color */
 }
 
 /* Profile picture container */
@@ -43,7 +43,7 @@ p {
   display: inline-block; /* Make the link look like a button */
   margin-top: 20px; /* Space above the button */
   padding: 10px 20px; /* Button padding */
-  background-color: #007bff; /* Blue background */
+  background-color: #03071e; /* Blue background */
   color: #fff; /* White text */
   text-decoration: none; /* Remove underline */
   border-radius: 5px; /* Rounded corners */
