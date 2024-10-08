@@ -8,6 +8,7 @@ import Projects from "./Pages/Projects/Projects.js";
 import Team from "./Pages/Team/Team.js";
 import Contact from "./Pages/Contact/Contact.js";
 
+
 function App() {
   return (
     <Router>

@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image:url('../../portfolio/src/assets/background.jpg');
+  background-image:url('./assets/background.jpg');
 }
 
 h1, h2, h3 {
