@@ -10,6 +10,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-image:url('./assets/background.jpg');
   background-attachment: fixed;
+  background-size: cover; /* Cover the entire background */
+
 }
 
 h1, h2, h3 {
