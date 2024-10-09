@@ -15,7 +15,7 @@
 
 /* Style for the profile picture */
 .profile-pic {
-  width: 500px; /* Set width of the image */
+  width:500px; /* Set width of the image */
   height: 500px; /* Set height of the image */
   border-radius: 10px; /* Make the image circular */
   object-fit: cover; /* Ensure the image doesn't get distorted */
@@ -52,4 +52,54 @@ p {
 
 .resume-button:hover {
   background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media only screen and (max-width:1000px){
+  /*mobile*/
+  .home-container{
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    padding:50px;
+    overflow-x: hidden;
+  
+  }
+ .profile-pic{
+  margin-left:20%;
+  margin-right: 25px;
+ }
+ .profile {
+  
+  margin-bottom:10px;
+   /* Space between image and text content */
+}
+.content {
+    
+  
+   text-align: justify; /* Limit the width of the content */
+ }
+
+}
+
+@media only screen and (min-width:1001px) and (max-width:1024px){
+  /* tablet*/
+  .home-container{
+    flex-direction:row;
+    justify-content: center;
+  }
+
+  .content {
+    
+   width: 800px;
+    text-align: justify; /* Limit the width of the content */
+  }
+
+
+  .profile {
+  margin-right: 1px;
+   /* Space between image and text content */
+}
+  
+ 
+  
 }
