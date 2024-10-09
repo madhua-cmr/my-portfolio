@@ -65,38 +65,95 @@
   .project-link:hover {
     background-color: #0056b3;
   }
-  @media (max-width: 767px) {
-    h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-    }
+ 
+/* Mobile View (Screens smaller than 744px) */
+@media only screen and (max-width: 744px) {
+  .projects-grid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 15px; /* Reduce gap for smaller screens */
+  }
 
-    .projects-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-    }
+  h1 {
+      font-size: 2rem; /* Smaller title for mobile */
+  }
 
-    .project-content h2 {
-        font-size: 1.5rem; /* Smaller heading for mobile */
-    }
+  .project-card {
+      padding: 15px; /* Reduce padding for mobile */
+  }
 
-    .project-content p {
-        font-size: 0.9rem; /* Smaller paragraph text for mobile */
-    }
+  .project-content h2 {
+      font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .project-content p {
+      font-size: 0.9rem; /* Smaller paragraph text */
+  }
+
+  .project-image {
+      height: 150px; /* Smaller image height for mobile */
+  }
+
+  .project-link {
+      padding: 8px 16px; /* Smaller button size */
+  }
 }
 
-@media (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem; /* Larger font size for desktop */
-    }
+/* Tablet View (Screens between 745px and 1024px) */
+@media only screen and (min-width: 745px) and (max-width: 1024px) {
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for tablet */
+      gap: 20px;
+  }
 
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    }
+  h1 {
+      font-size: 2.2rem; /* Slightly smaller title */
+  }
 
-    .project-content h2 {
-        font-size: 1.8rem; /* Heading size for desktop */
-    }
+  .project-card {
+      padding: 20px;
+  }
 
-    .project-content p {
-        font-size: 1rem; /* Paragraph size for desktop */
-    }
+  .project-content h2 {
+      font-size: 1.6rem;
+  }
+
+  .project-content p {
+      font-size: 1rem;
+  }
+
+  .project-image {
+      height: 180px; /* Adjust image size */
+  }
+}
+
+/* Desktop View (Screens larger than 1025px) */
+@media only screen and (min-width: 1025px) {
+  .projects-grid {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+      gap: 30px;
+  }
+
+  h1 {
+      font-size: 2.5rem; /* Larger title */
+  }
+
+  .project-card {
+      padding: 25px;
+  }
+
+  .project-content h2 {
+      font-size: 1.8rem;
+  }
+
+  .project-content p {
+      font-size: 1rem;
+  }
+
+  .project-image {
+      height: 200px; /* Full-size image for desktop */
+  }
+
+  .project-link {
+      padding: 10px 20px;
+  }
 }

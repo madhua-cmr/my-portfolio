@@ -1,122 +1,182 @@
 .team-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  /* Ensure the entire image fits without cropping */
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.team-content {
+  margin-top: 15px;
+}
+
+.team-content h2 {
+  font-size: 1.5rem;
+  color: #03071e;
+  margin-bottom: 10px;
+}
+
+.team-content h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.team-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile View (Screens smaller than 744px) */
+@media only screen and (max-width: 744px) {
   h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    /* Smaller heading size */
   }
-  
+
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    /* Single column for mobile */
+    gap: 15px;
+    /* Reduce gap for better fit */
   }
-  
+
   .team-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px;
+    /* Less padding on mobile */
   }
-  
+
   .team-image {
-    width: 100%;
-    height: 200px;
-    object-fit: contain; /* Ensure the entire image fits without cropping */
-  overflow: hidden; 
-    border-radius: 100px;
+    height: 150px;
+    /* Smaller image height */
   }
-  
-  .team-content {
-    margin-top: 15px;
-  }
-  
+
   .team-content h2 {
-    font-size: 1.5rem;
-    color: #03071e;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    /* Smaller title size */
   }
-  
+
   .team-content h3 {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .team-content p {
     font-size: 1rem;
-    color: #666;
+    /* Smaller subtitle */
   }
-  
-  .team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  .team-content p {
+    font-size: 0.9rem;
+    /* Smaller paragraph text */
   }
-  
+}
 
-  @media only screen and (min-width: 745px) and (max-width: 1024px) {
-    h1 {
-        font-size: 2.2rem; /* Slightly smaller title for tablet */
-    }
+/* Tablet View (Screens between 745px and 1024px) */
+@media only screen and (min-width: 745px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+    /* Slightly smaller title */
+  }
 
-    .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the number of columns */
-    }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two-column layout for tablets */
+    gap: 20px;
+    /* Normal gap */
+  }
 
-    .team-card {
-        padding: 20px;
-    }
+  .team-card {
+    padding: 20px;
+    /* Normal padding */
+  }
 
-    .team-image {
-        height: 180px; /* Adjust image size for tablet */
-    }
+  .team-image {
+    height: 180px;
+    /* Adjusted image size for tablets */
+  }
 
-    .team-content h2 {
-        font-size: 1.4rem; /* Adjust font size for tablet */
-    }
+  .team-content h2 {
+    font-size: 1.4rem;
+    /* Adjusted title size */
+  }
 
-    .team-content h3 {
-        font-size: 1.1rem;
-    }
+  .team-content h3 {
+    font-size: 1.1rem;
+    /* Adjusted subtitle size */
+  }
 
-    .team-content p {
-        font-size: 0.95rem;
-    }
+  .team-content p {
+    font-size: 0.95rem;
+    /* Adjusted paragraph size */
+  }
 }
 
 /* Desktop View (Screens larger than 1025px) */
 @media only screen and (min-width: 1025px) {
-    h1 {
-        font-size: 2.5rem; /* Larger title */
-    }
+  h1 {
+    font-size: 2.5rem;
+    /* Larger heading size */
+  }
 
-    .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Larger columns for desktop */
-    }
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    /* Three-column layout for desktop */
+    gap: 30px;
+    /* Larger gap for better spacing */
+  }
 
-    .team-card {
-        padding: 30px; /* Larger padding for desktop */
-    }
+  .team-card {
+    padding: 25px;
+    /* Larger padding */
+  }
 
-    .team-image {
-        height: 200px; /* Full-size images for desktop */
-    }
+  .team-image {
+    height: 200px;
+    /* Full-size image for desktop */
+  }
 
-    .team-content h2 {
-        font-size: 1.6rem; /* Slightly larger heading size */
-    }
+  .team-content h2 {
+    font-size: 1.6rem;
+    /* Larger title */
+  }
 
-    .team-content h3 {
-        font-size: 1.3rem; /* Larger subheading */
-    }
+  .team-content h3 {
+    font-size: 1.3rem;
+    /* Larger subtitle */
+  }
 
-    .team-content p {
-        font-size: 1rem; /* Standard text size */
-    }
+  .team-content p {
+    font-size: 1rem;
+    /* Standard paragraph size */
+  }
 }
