@@ -46,26 +46,61 @@
     margin-bottom: 10px; /* Space between paragraphs */
     text-align: justify;
   }
-  
-  @media only screen and (max-width:744px){
-     .about-container{
-      align-items: center;
-      padding: 50px 20px;
-     }
-    .about-card{
-      display: flex;
-      flex-direction: column;
-     }
-    
+ /* Mobile View (Screens smaller than 744px) */
+@media only screen and (max-width: 744px) {
+  .about-card {
+      flex-direction: column; /* Stack the content */
+      text-align: center; /* Center text for better look */
+      padding: 20px; /* Reduce padding for mobile */
   }
-  @media only screen and (min-width:745px) and (max-width:1024px){
-    /*teblet*/
-    .about-description p{
-      font-size: 14px;
-      }
+
+  .profile-photo {
+      margin-right: 0; /* Remove margin */
+      margin-bottom: 20px; /* Space below image */
+      width: 150px; /* Reduce image size on mobile */
+      height: 150px;
   }
-  @media only screen and (min-width:1025px){
-    .about-description p{
-      font-size: 18px;
-    }
+
+  .about-title {
+      font-size: 2rem; /* Smaller font size */
   }
+
+  .about-description p {
+      font-size: 0.9rem; /* Smaller font for mobile */
+      line-height: 1.5; /* Slightly smaller line height */
+  }
+}
+
+/* Tablet View (Screens between 745px and 1024px) */
+@media only screen and (min-width: 745px) and (max-width: 1024px) {
+  .about-card {
+      flex-direction: row; /* Keep row layout */
+      padding: 40px; /* Adjust padding for tablet */
+  }
+
+  .profile-photo {
+      width: 180px; /* Adjust image size */
+      height: 180px;
+  }
+
+  .about-description p {
+      font-size: 1rem; /* Smaller font size for tablet */
+  }
+}
+
+/* Desktop View (Screens 1025px and larger) */
+@media only screen and (min-width: 1025px) {
+  .about-card {
+      flex-direction: row; /* Horizontal layout */
+  }
+
+  .profile-photo {
+      width: 200px; /* Standard size for desktop */
+      height: 200px;
+  }
+
+  .about-description p {
+      font-size: 1.1rem; /* Slightly larger text for desktop */
+      line-height: 1.8; /* Better readability on larger screens */
+  }
+}

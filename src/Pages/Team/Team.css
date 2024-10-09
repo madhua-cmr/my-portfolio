@@ -59,3 +59,64 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
+
+  @media only screen and (min-width: 745px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2rem; /* Slightly smaller title for tablet */
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the number of columns */
+    }
+
+    .team-card {
+        padding: 20px;
+    }
+
+    .team-image {
+        height: 180px; /* Adjust image size for tablet */
+    }
+
+    .team-content h2 {
+        font-size: 1.4rem; /* Adjust font size for tablet */
+    }
+
+    .team-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .team-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Desktop View (Screens larger than 1025px) */
+@media only screen and (min-width: 1025px) {
+    h1 {
+        font-size: 2.5rem; /* Larger title */
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Larger columns for desktop */
+    }
+
+    .team-card {
+        padding: 30px; /* Larger padding for desktop */
+    }
+
+    .team-image {
+        height: 200px; /* Full-size images for desktop */
+    }
+
+    .team-content h2 {
+        font-size: 1.6rem; /* Slightly larger heading size */
+    }
+
+    .team-content h3 {
+        font-size: 1.3rem; /* Larger subheading */
+    }
+
+    .team-content p {
+        font-size: 1rem; /* Standard text size */
+    }
+}
