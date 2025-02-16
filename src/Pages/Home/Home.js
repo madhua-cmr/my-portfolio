@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import resume from '../../assets/resume.pdf'; 
+import resume from '../../assets/Madhumitha_A_Resume.pdf'; 
 import profilePic from '../../assets/home.png'; // Add your photo path here
 
 const Home = () => {
